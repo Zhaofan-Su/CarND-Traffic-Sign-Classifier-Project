@@ -6,3 +6,4 @@ models
 *.p
 **/项目要求文档.md
 **/dataset
+.vscode
