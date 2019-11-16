@@ -149,11 +149,12 @@ def create_sample_set(grouped_imgs_by_label, imgs, labels, pct=0.4):
 
 def normalise_images(imgs, dist):
     """
-    将dist中的图像正则化
+    使用dist中的均值和标准差将imgs中的图像正则化
     """
-    std = np.std(dist)
+    std = np.std(dist, axis=0)
     #std = 128
-    mean = np.mean(dist)
+    mean = np.mean(dist, axis=0)
+
     #mean = 128
     return (imgs - mean) / std
 
