@@ -152,11 +152,9 @@ def normalise_images(imgs, dist):
     使用dist中的均值和标准差将imgs中的图像正则化
     """
     std = np.std(dist, axis=0)
-    #std = 128
     mean = np.mean(dist, axis=0)
 
-    #mean = 128
-    return (imgs - mean) / std
+    return (mean - imgs) / std
 
 
 def to_grayscale(img):

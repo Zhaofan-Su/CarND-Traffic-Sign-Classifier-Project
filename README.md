@@ -1,27 +1,31 @@
-## Project: Build a Traffic Sign Recognition Program
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+## 图像分类: 道路交通标志识别
 
-Overview
 ---
-In this project, you will use what you've learned about deep neural networks and convolutional neural networks to classify traffic signs. You will train and validate a model so it can classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After the model is trained, you will then try out your model on images of German traffic signs that you find on the web.
 
-We have included an Ipython notebook that contains further instructions 
-and starter code. Be sure to download the [Ipython notebook](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb). 
-
-We also want you to create a detailed writeup of the project. Check out the [writeup template](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/writeup_template.md) for this project and use it as a starting point for creating your own writeup. The writeup can be either a markdown file or a pdf document.
-
-To meet specifications, the project will require submitting three files: 
-* the Ipython notebook with the code
-* the code exported as an html file
-* a writeup report either as a markdown or pdf file 
-
-Creating a Great Writeup
+概述
 ---
-A great writeup should include the [rubric points](https://review.udacity.com/#!/rubrics/481/view) as well as your description of how you addressed each point.  You should include a detailed description of the code used in each step (with line-number references and code snippets where necessary), and links to other supporting documents or external references.  You should include images in your writeup to demonstrate how your code works with examples.  
 
-All that said, please be concise!  We're not looking for you to write a book here, just a brief description of how you passed each rubric point, and references to the relevant code :). 
+交通标志识别能有效地帮助司机们了解道路的关键信息、获取当前的道路状况，从而有效地避免交通事故的发生。同时，交通标志识别技术对于自动驾驶来说也有着非常重要的作用。
 
-You're not required to use markdown for your writeup.  If you use another method please just submit a pdf of your writeup.
+使用传统的计算机视觉的方法来对交通标志进行识别并不是不可行的事情，但是需要耗费大量的事件来手工处理图像中的一些重要的特征。如果引入深度学习技术来识别交通标志，则可以大大地减少人工工作量，选择合适的网络结构以及所需的训练参数则可以将识别的准确率大幅度提高。
+
+该项目构建了可以调参的LeNet网络，在德国交通标志数据集[GTSRB](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset)上训练进行分类识别。
+
+项目结构
+---
+
+
+项目运行方式
+---
+
+请使用下列命令运行项目：
+```sh
+git clone https://github.com/Zhaofan-Su/CarND-Traffic-Sign-Classifier-Project.git
+cd CarND-Traffic-Sign-Classifier-Project
+jupyter notebook Traffic_Sign_Classifier.ipynb
+```
+使用这种方式，你将会看到整个项目的数据预处理、网络搭建、数据训练以及模型测试的过程，你也可以根据需要修改网络参数，训练自己的模型。
+
 
 The Project
 ---
@@ -53,6 +57,4 @@ jupyter notebook Traffic_Sign_Classifier.ipynb
 ### Requirements for Submission
 Follow the instructions in the `Traffic_Sign_Classifier.ipynb` notebook and write the project report using the writeup template as a guide, `writeup_template.md`. Submit the project code and writeup document.
 
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
 
