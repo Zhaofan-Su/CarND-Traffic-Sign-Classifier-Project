@@ -1,7 +1,7 @@
 import pandas as pd
 from matplotlib import pyplot as plt
 import numpy as np
-import cv2
+from cv2 import cv2
 from imgaug import augmenters as iaa
 
 
@@ -151,10 +151,13 @@ def normalise_images(imgs, dist):
     """
     使用dist中的均值和标准差将imgs中的图像正则化
     """
-    std = np.std(dist, axis=0)
-    mean = np.mean(dist, axis=0)
+    # std = np.std(dist, axis=0)
+    # mean = np.mean(dist, axis=0)
+    std = np.std(dist)
+    mean = np.mean(dist)
+    return (imgs-mean)/std
 
-    return (mean - imgs) / std
+    # return (mean - imgs) / std
 
 
 def to_grayscale(img):
