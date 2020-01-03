@@ -22,4 +22,4 @@ jupyter notebook Traffic_Sign_Classifier.ipynb
 ```
 使用这种方式，你将会看到整个项目的数据预处理、网络搭建、数据训练以及模型测试的过程，你也可以根据需要修改网络参数，训练自己的模型。
 
-
+[下载数据集](https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581faac4_traffic-signs-data/traffic-signs-data.zip)
